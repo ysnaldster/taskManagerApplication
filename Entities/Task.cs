@@ -6,18 +6,26 @@ namespace TaskManagerApplication.Entities;
 public class Task
 {
     [Key]
-    public Guid Guid { get; set; }
+    public Guid ID { get; set; }
     
-    [ForeignKey("CategoryGuid")]
-    public Guid CategoryGuid { get; set; }
+    [ForeignKey("CategoryID")]
+    [Column("category_id_fk")]
+    public Guid CategoryID { get; set; }
     
     [Required]
     [MaxLength(200)]
+    [Column("title", TypeName="varchar(200)")]
     public string Title { get; set; }
     
+    [Column("description", TypeName="text")]
     public string Description { get; set; }
+    
+    [Column("priority", TypeName="integer")]
     public Priority PriorityTask { get; set; }
+    
+    [Column("creation_date")]
     public DateTime CreationDate { get; set; }
+
     public virtual Category Category { get; set; }
     
     //Propiedad que se va a omitir (No se creara en la base de datos)
