@@ -1,15 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "gRM7z0Z3QGSUqFYwJbs0zoT3Bn1c/28S3YbfpINTSMdTRY8WUE4JRGQGFiUzW9E9MZ8hyq9PQ0u4DWdxadIk9w==",
+  "dgSpecHash": "lzB2GMxPCx5lezAdUwU9gBkOA7tB5hHhPvycsGq7bnUDNzEjimco4CPJvjZbSpeQmtZs7wTy4AstknR86ZzVXw==",
   "success": true,
   "projectFilePath": "/home/ysnaldo/Desktop/Study/backendTraining/projects/c#Projects/TaskManagerApplication/TaskManagerApplication.csproj",
   "expectedPackageFiles": [
+    "/home/ysnaldo/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/home/ysnaldo/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
     "/home/ysnaldo/.nuget/packages/microsoft.data.sqlclient/2.1.4/microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "/home/ysnaldo/.nuget/packages/microsoft.data.sqlclient.sni.runtime/2.1.1/microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "/home/ysnaldo/.nuget/packages/microsoft.entityframeworkcore/6.0.0/microsoft.entityframeworkcore.6.0.0.nupkg.sha512",
     "/home/ysnaldo/.nuget/packages/microsoft.entityframeworkcore.abstractions/6.0.0/microsoft.entityframeworkcore.abstractions.6.0.0.nupkg.sha512",
     "/home/ysnaldo/.nuget/packages/microsoft.entityframeworkcore.analyzers/6.0.0/microsoft.entityframeworkcore.analyzers.6.0.0.nupkg.sha512",
+    "/home/ysnaldo/.nuget/packages/microsoft.entityframeworkcore.design/6.0.0/microsoft.entityframeworkcore.design.6.0.0.nupkg.sha512",
     "/home/ysnaldo/.nuget/packages/microsoft.entityframeworkcore.inmemory/6.0.0/microsoft.entityframeworkcore.inmemory.6.0.0.nupkg.sha512",
     "/home/ysnaldo/.nuget/packages/microsoft.entityframeworkcore.relational/6.0.0/microsoft.entityframeworkcore.relational.6.0.0.nupkg.sha512",
     "/home/ysnaldo/.nuget/packages/microsoft.entityframeworkcore.sqlserver/6.0.0/microsoft.entityframeworkcore.sqlserver.6.0.0.nupkg.sha512",

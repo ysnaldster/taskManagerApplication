@@ -54,3 +54,5 @@
 /home/ysnaldo/Desktop/Study/backendTraining/projects/c#Projects/TaskManagerApplication/obj/Debug/net6.0/TaskManagerApplication.genruntimeconfig.cache
 /home/ysnaldo/Desktop/Study/backendTraining/projects/c#Projects/TaskManagerApplication/bin/Debug/net6.0/Npgsql.dll
 /home/ysnaldo/Desktop/Study/backendTraining/projects/c#Projects/TaskManagerApplication/bin/Debug/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+/home/ysnaldo/Desktop/Study/backendTraining/projects/c#Projects/TaskManagerApplication/bin/Debug/net6.0/Humanizer.dll
+/home/ysnaldo/Desktop/Study/backendTraining/projects/c#Projects/TaskManagerApplication/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Design.dll

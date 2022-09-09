@@ -1,5 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace TaskManagerApplication.Entities;
 
@@ -25,13 +26,16 @@ public class Task
     
     //[Column("creation_date")]
     public DateTime CreationDate { get; set; }
+    
+    public string Author { get; set; }
 
     public virtual Category Category { get; set; }
     
     //Propiedad que se va a omitir (No se creara en la base de datos)
     //Esta propiedad indica un resumen de description cuando este sobrepasa
     // la cantidad de caracteres. 
-    //[NotMapped]
+    //[NotMapped
+    [JsonIgnore]
     public string Resumen { get; set; }
     
     public enum Priority

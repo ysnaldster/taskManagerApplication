@@ -1,5 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace TaskManagerApplication.Entities;
 
@@ -16,5 +17,9 @@ public class Category
     
     //[Column("description", TypeName="text")]
     public string Description { get; set; }
+    
+    public long Time { get; set; }
+    
+    [JsonIgnore]
     public virtual ICollection<Task> Tasks { get; set; }
 }

@@ -20,7 +20,10 @@ public class TaskManagerApplicationContext : DbContext
             category.ToTable("Category");
             category.HasKey(p => p.ID);
             category.Property(p => p.Name).IsRequired().HasMaxLength(60).HasColumnName("name");
-            category.Property(p => p.Description).HasColumnName("description");
+            category.Property(p => p.Description).HasColumnName("description").IsRequired(false);
+            category.Property(p => p.Time).HasColumnName("time");
+
+            category.HasData(InitData.LoadCategories());
         });
 
         modelBuilder.Entity<Task>(task =>
@@ -29,10 +32,13 @@ public class TaskManagerApplicationContext : DbContext
             task.HasKey(p => p.ID);
             task.HasOne(p => p.Category).WithMany(p => p.Tasks);
             task.Property(p => p.Title).IsRequired().HasMaxLength(200).HasColumnName("title");
-            task.Property(p => p.Description).HasColumnName("description");
+            task.Property(p => p.Description).HasColumnName("description").IsRequired(false);
             task.Property(p => p.PriorityTask).HasColumnName("priority");
-            task.Property(p => p.CreationDate).HasColumnName("creation_date");
+            task.Property(p => p.CreationDate).HasDefaultValue(DateTime.Now).HasColumnName("creation_date");
+            task.Property(p => p.Author).HasColumnName("author");
             task.Ignore(p => p.Resumen);
+
+            task.HasData(InitData.LoadTasks());
         });
     }
 }
